@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Security Portfolio</title>
+  <meta name="description" content="Security Portfolio — cyber security and network engineering portfolio with modern cyberpunk dashboard aesthetics." />
+  <meta property="og:title" content="Security Portfolio" />
+  <meta property="og:description" content="Modern cyber security portfolio for a Cyber Security Enthusiast, Network Engineer, and SOC Analyst Learner." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=cabinet-grotesk@500,700,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="loading-screen" id="loadingScreen" aria-hidden="true">
+    <div class="loading-box">
+      <h2>Initializing Tiano Portfolio</h2>
+      <p>Loading cyber defense interface and network visualization modules.</p>
+      <div class="loading-log" aria-hidden="true">
+        <span>> booting secure shell interface...</span>
+        <span>> syncing SIEM telemetry streams...</span>
+        <span>> calibrating monitoring dashboard...</span>
+        <span>> portfolio environment online.</span>
+      </div>
+      <div class="loading-bar"><div></div></div>
+    </div>
+  </div>
+
+  <canvas class="matrix-canvas" id="matrixCanvas"></canvas>
+  <canvas class="particles-canvas" id="particlesCanvas"></canvas>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <div class="site-shell">
+    <header>
+      <div class="container nav-wrap glass">
+        <a href="#hero" class="logo" aria-label="Tiano Portfolio home">
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-4Z"></path>
+              <path d="M8.5 12.5 11 15l5-5"></path>
+            </svg>
+          </span>
+          <span>Tiano Portfolio</span>
+        </a>
+
+        <nav id="siteNav" aria-label="Primary navigation">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" data-theme-toggle aria-label="Switch theme">
+            <i class="fa-regular fa-moon"></i>
+          </button>
+          <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-controls="siteNav" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section" id="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <span class="eyebrow">Secure Infrastructure Builder</span>
+            <h1><span class="hero-gradient">Tiano</span><br />Portfolio</h1>
+            <div class="hero-roles"><span id="typingText"></span><span class="typing-caret">|</span></div>
+            <p>
+              Modern portfolio for a practitioner focused on network defense, cyber lab engineering, and hands-on SOC monitoring workflows with a premium dashboard aesthetic.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-diagram-project"></i> View Projects</a>
+              <a href="#contact" class="btn btn-secondary"><i class="fa-regular fa-paper-plane"></i> Contact Me</a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat-chip glass"><span>Focus</span><strong>Blue Team Labs</strong></div>
+              <div class="stat-chip glass"><span>Core</span><strong>Firewall & SIEM</strong></div>
+              <div class="stat-chip glass"><span>Theme</span><strong>Cyberpunk UI</strong></div>
+            </div>
+          </div>
+
+          <aside class="hero-panel floating reveal" aria-label="Security dashboard overview">
+            <div class="panel-content">
+              <div class="terminal-bar">
+                <div class="terminal-dots"><span></span><span></span><span></span></div>
+                <span>security engineer dashboard</span>
+              </div>
+              <div class="profile-card">
+                <div class="profile-visual" aria-label="Futuristic profile illustration"></div>
+                <div>
+                  <h2 style="font-family: var(--font-display); font-size: var(--text-xl); line-height: 1;">Tiano</h2>
+                  <p style="color: var(--color-text-muted); margin-top: .4rem;">Cyber Security Enthusiast · Network Engineer · SOC Analyst Learner</p>
+                </div>
+              </div>
+              <div class="profile-lines">
+                <div class="line-item"><span>Threat Monitoring</span><strong>Wazuh / Security Onion</strong></div>
+                <div class="line-item"><span>Firewall Defense</span><strong>pfSense / MikroTik</strong></div>
+                <div class="line-item"><span>Attack Lab</span><strong>Kali Linux / GNS3 / VMware</strong></div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <span class="eyebrow">About Me</span>
+              <h2 class="section-title">Cyber operations with a network engineering mindset.</h2>
+            </div>
+            <p class="section-copy">This portfolio positions Tiano as someone who learns by building labs, tuning systems, and validating controls through practical simulation.</p>
+          </div>
+
+          <div class="about-grid">
+            <article class="about-card glass reveal">
+              <div class="about-copy">
+                <h3 style="font-size: var(--text-xl); font-family: var(--font-display); margin-bottom: var(--space-3);">Focused learning areas</h3>
+                <p>
+                  I focus on firewall administration, lab-based blue team workflows, SIEM visibility, and network hardening across modern virtualized environments. My work blends defensive configuration, event monitoring, and structured practice for incident visibility.
+                </p>
+                <div class="focus-list">
+                  <div class="focus-item"><i class="fa-solid fa-shield-halved"></i> pfSense</div>
+                  <div class="focus-item"><i class="fa-solid fa-router"></i> MikroTik</div>
+                  <div class="focus-item"><i class="fa-solid fa-chart-line"></i> Wazuh</div>
+                  <div class="focus-item"><i class="fa-brands fa-linux"></i> Kali Linux</div>
+                  <div class="focus-item"><i class="fa-solid fa-binoculars"></i> Security Onion</div>
+                  <div class="focus-item"><i class="fa-solid fa-network-wired"></i> Network Security</div>
+                  <div class="focus-item"><i class="fa-solid fa-server"></i> SIEM & Monitoring</div>
+                  <div class="focus-item"><i class="fa-solid fa-layer-group"></i> Virtual Labs</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="about-card glass reveal">
+              <span class="eyebrow">Futuristic Profile</span>
+              <div style="display:grid; place-items:center; min-height: 100%; padding-top: var(--space-4);">
+                <div style="width:min(100%, 340px); aspect-ratio: 4/5; border-radius: 28px; position:relative; overflow:hidden; border:1px solid rgba(111,214,255,.18); box-shadow: var(--glow-purple), var(--shadow-lg); background:
+                  radial-gradient(circle at 30% 18%, rgba(54,209,255,.26), transparent 28%),
+                  radial-gradient(circle at 74% 22%, rgba(139,92,246,.30), transparent 32%),
+                  linear-gradient(180deg, rgba(8, 14, 26, .92), rgba(13, 22, 42, .98));">
+                  <div style="position:absolute; inset:0; background-image: linear-gradient(rgba(111,214,255,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(111,214,255,.08) 1px, transparent 1px); background-size: 24px 24px; opacity:.4;"></div>
+                  <div style="position:absolute; inset:10% 16% 14%; border-radius: 32px; border:1px solid rgba(255,255,255,.05); background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.01)); backdrop-filter: blur(10px);"></div>
+                  <div style="position:absolute; inset:18% 25% 36%; border-radius: 44% 44% 36% 36%; background: linear-gradient(180deg, rgba(240,247,255,.88), rgba(113,171,255,.36)); box-shadow: 0 0 44px rgba(54,209,255,.18);"></div>
+                  <div style="position:absolute; inset:47% 22% 13%; border-radius: 42% 42% 26px 26px; background: linear-gradient(180deg, rgba(24, 42, 74, .95), rgba(11,18,33,.95));"></div>
+                  <div style="position:absolute; left:10%; right:10%; bottom:8%; padding: .9rem 1rem; border-radius: 18px; border:1px solid rgba(111,214,255,.16); background: rgba(10,16,29,.68); backdrop-filter: blur(12px);">
+                    <strong style="display:block; font-size: var(--text-sm); letter-spacing: .12em; text-transform: uppercase; color: var(--color-primary);">Identity Layer</strong>
+                    <span style="color: var(--color-text-muted); font-size: var(--text-sm);">Built for cyber security branding and futuristic portfolio presentation.</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <span class="eyebrow">Skills</span>
+              <h2 class="section-title">Core tools across systems, networks, and monitoring.</h2>
+            </div>
+            <p class="section-copy">Each skill card is styled like a compact dashboard module to reinforce the premium cyber engineer look.</p>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card glass reveal"><div class="skill-icon"><i class="fa-brands fa-linux"></i></div><div><h3>Linux</h3><p>CLI workflow, permissions, tooling, and service management.</p></div></article>
+            <article class="skill-card glass reveal"><div class="skill-icon"><i class="fa-solid fa-network-wired"></i></div><div><h3>Networking</h3><p>Routing, segmentation, topology design, and troubleshooting.</p></div></article>
+            <article class="skill-card glass reveal"><div class="skill-icon"><i class="fa-solid fa-shield"></i></div><div><h3>Cyber Security</h3><p>Defense-in-depth, hardening, and attack surface awareness.</p></div></article>
+            <article class="skill-card glass reveal"><div class="skill-icon"><i class="fa-solid fa-chart-line"></i></div><div><h3>Wazuh</h3><p>SIEM visibility, alerting, dashboards, and telemetry review.</p></div></article>
+            <article class="skill-card glass reveal"><div class="skill-icon"><i class="fa-solid fa-fire"></i></div><div><h3>pfSense</h3><p>Firewall rules, IDS integration, NAT, and secure gateways.</p></div></article>
+            <article class="skill-card glass reveal"><div class="skill-icon"><i class="fa-solid fa-router"></i></div><div><h3>MikroTik</h3><p>RouterOS policy control, firewall tuning, and bandwidth logic.</p></div></article>
+            <article class="skill-card glass reveal"><div class="skill-icon"><i class="fa-solid fa-diagram-project"></i></div><div><h3>GNS3</h3><p>Lab simulation for enterprise topology and validation practice.</p></div></article>
+            <article class="skill-card glass reveal"><div class="skill-icon"><i class="fa-solid fa-cubes"></i></div><div><h3>VMware</h3><p>Virtual machine orchestration for repeatable cyber labs.</p></div></article>
+            <article class="skill-card glass reveal"><div class="skill-icon"><i class="fa-solid fa-globe"></i></div><div><h3>Web Security</h3><p>Input handling, upload validation, and surface testing.</p></div></article>
+            <article class="skill-card glass reveal"><div class="skill-icon"><i class="fa-solid fa-desktop"></i></div><div><h3>SOC Monitoring</h3><p>Event triage, visibility workflows, and alert interpretation.</p></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <span class="eyebrow">Projects</span>
+              <h2 class="section-title">Hands-on builds for cyber labs and secure infrastructure.</h2>
+            </div>
+            <p class="section-copy">Every project includes a dashboard-style visual preview, short mission summary, stack tags, and action buttons ready for portfolio use.</p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card glass reveal">
+              <div class="project-preview"><div class="preview-grid"></div><div class="preview-lines"><span></span><span></span><span></span></div></div>
+              <h3 style="font-size: var(--text-lg);">Network Security Lab using pfSense &amp; Wazuh</h3>
+              <p style="color: var(--color-text-muted); margin-top: .6rem;">Built a defensive lab combining firewall policy management with centralized monitoring to observe traffic and events in a controlled environment.</p>
+              <div class="project-meta"><span class="tag">pfSense</span><span class="tag">Wazuh</span><span class="tag">VMware</span></div>
+              <div class="project-actions"><a class="btn btn-secondary" href="#contact">GitHub</a><a class="btn btn-ghost" href="#contact">Demo</a></div>
+            </article>
+
+            <article class="project-card glass reveal">
+              <div class="project-preview"><div class="preview-browser"></div><div class="preview-lines" style="align-content:center;"><span style="width:64%"></span><span style="width:78%"></span><span style="width:52%"></span></div></div>
+              <h3 style="font-size: var(--text-lg);">SIEM Monitoring with Wazuh</h3>
+              <p style="color: var(--color-text-muted); margin-top: .6rem;">Configured dashboards and alert pipelines to study endpoint visibility, log ingestion, and practical security event interpretation.</p>
+              <div class="project-meta"><span class="tag">Wazuh</span><span class="tag">SIEM</span><span class="tag">Monitoring</span></div>
+              <div class="project-actions"><a class="btn btn-secondary" href="#contact">GitHub</a><a class="btn btn-ghost" href="#contact">Demo</a></div>
+            </article>
+
+            <article class="project-card glass reveal">
+              <div class="project-preview"><div class="preview-grid"></div><div class="preview-alert"></div><div class="preview-lines"><span style="width:44%"></span><span style="width:71%"></span><span style="width:37%"></span></div></div>
+              <h3 style="font-size: var(--text-lg);">Attack Simulation using Kali Linux &amp; Metasploitable</h3>
+              <p style="color: var(--color-text-muted); margin-top: .6rem;">Used a safe lab setup to simulate attack scenarios for learning reconnaissance, exploitation basics, and defensive visibility checks.</p>
+              <div class="project-meta"><span class="tag">Kali Linux</span><span class="tag">Metasploitable</span><span class="tag">Lab</span></div>
+              <div class="project-actions"><a class="btn btn-secondary" href="#contact">GitHub</a><a class="btn btn-ghost" href="#contact">Demo</a></div>
+            </article>
+
+            <article class="project-card glass reveal">
+              <div class="project-preview"><div class="preview-browser"></div><div class="preview-lines"><span style="width:58%"></span><span style="width:46%"></span><span style="width:69%"></span></div></div>
+              <h3 style="font-size: var(--text-lg);">MikroTik Firewall Configuration</h3>
+              <p style="color: var(--color-text-muted); margin-top: .6rem;">Designed and refined firewall rules for access control, segmentation, and traffic policy within a RouterOS-focused environment.</p>
+              <div class="project-meta"><span class="tag">MikroTik</span><span class="tag">RouterOS</span><span class="tag">Firewall</span></div>
+              <div class="project-actions"><a class="btn btn-secondary" href="#contact">GitHub</a><a class="btn btn-ghost" href="#contact">Demo</a></div>
+            </article>
+
+            <article class="project-card glass reveal">
+              <div class="project-preview"><div class="preview-grid"></div><div class="preview-lines"><span style="width:62%"></span><span style="width:76%"></span><span style="width:33%"></span></div></div>
+              <h3 style="font-size: var(--text-lg);">GNS3 Enterprise Network Topology</h3>
+              <p style="color: var(--color-text-muted); margin-top: .6rem;">Created enterprise-style network simulations to practice routing paths, firewall placement, and segmented architecture planning.</p>
+              <div class="project-meta"><span class="tag">GNS3</span><span class="tag">Topology</span><span class="tag">Enterprise</span></div>
+              <div class="project-actions"><a class="btn btn-secondary" href="#contact">GitHub</a><a class="btn btn-ghost" href="#contact">Demo</a></div>
+            </article>
+
+            <article class="project-card glass reveal">
+              <div class="project-preview"><div class="preview-browser"></div><div class="preview-lines"><span style="width:54%"></span><span style="width:66%"></span><span style="width:41%"></span></div></div>
+              <h3 style="font-size: var(--text-lg);">Website Upload Security Testing</h3>
+              <p style="color: var(--color-text-muted); margin-top: .6rem;">Reviewed upload workflows to understand validation gaps, risky file handling, and secure implementation considerations on web applications.</p>
+              <div class="project-meta"><span class="tag">Web Security</span><span class="tag">Testing</span><span class="tag">Validation</span></div>
+              <div class="project-actions"><a class="btn btn-secondary" href="#contact">GitHub</a><a class="btn btn-ghost" href="#contact">Demo</a></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <span class="eyebrow">Experience Timeline</span>
+              <h2 class="section-title">Learning milestones that shape the portfolio story.</h2>
+            </div>
+            <p class="section-copy">The timeline is designed as a clean defensive operations path, suitable for personal branding even when experience is still in active development.</p>
+          </div>
+
+          <div class="timeline-card glass reveal" style="padding: var(--space-6);">
+            <div class="timeline">
+              <article class="experience-item reveal">
+                <span>Phase 01</span>
+                <h3 style="font-size: var(--text-lg); margin-top: .45rem;">Learning Networking</h3>
+                <p>Built understanding of IP addressing, routing logic, topology planning, and device communication across practical labs.</p>
+              </article>
+              <article class="experience-item reveal">
+                <span>Phase 02</span>
+                <h3 style="font-size: var(--text-lg); margin-top: .45rem;">Building Cybersecurity Labs</h3>
+                <p>Created repeatable environments with virtual machines, firewalls, and test systems for safe security experimentation.</p>
+              </article>
+              <article class="experience-item reveal">
+                <span>Phase 03</span>
+                <h3 style="font-size: var(--text-lg); margin-top: .45rem;">Learning SOC Monitoring</h3>
+                <p>Explored logging workflows, SIEM dashboards, and alert analysis to understand visibility and detection practices.</p>
+              </article>
+              <article class="experience-item reveal">
+                <span>Phase 04</span>
+                <h3 style="font-size: var(--text-lg); margin-top: .45rem;">Web Security Practice</h3>
+                <p>Studied upload security, risky inputs, and application-layer weaknesses from a defensive testing perspective.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <span class="eyebrow">Contact</span>
+              <h2 class="section-title">Reach out for collaboration, labs, and security-focused discussions.</h2>
+            </div>
+            <p class="section-copy">The contact area combines direct channels with a glassmorphism form so the layout stays premium and practical.</p>
+          </div>
+
+          <div class="contact-grid">
+            <article class="contact-card glass reveal">
+              <h3 style="font-size: var(--text-xl); font-family: var(--font-display);">Direct channels</h3>
+              <p style="margin-top: .65rem;">Replace the sample links below with your real contact details before publishing.</p>
+              <div class="contact-links">
+                <a class="contact-link" href="mailto:tiano.security@example.com" target="_blank" rel="noopener noreferrer"><span><small>Email</small><strong>tiano.security@example.com</strong></span><i class="fa-regular fa-envelope"></i></a>
+                <a class="contact-link" href="https://wa.me/6281522831001" target="_blank" rel="noopener noreferrer"><span><small>WhatsApp</small><strong>+62 812-3456-7890</strong></span><i class="fa-brands fa-whatsapp"></i></a>
+                <a class="contact-link" href="https://github.com/t1ano" target="_blank" rel="noopener noreferrer"><span><small>GitHub</small><strong>github.com/t1ano</strong></span><i class="fa-brands fa-github"></i></a>
+                <a class="contact-link" href="https://linkedin.com/in/t1ano" target="_blank" rel="noopener noreferrer"><span><small>LinkedIn</small><strong>linkedin.com/in/t1ano</strong></span><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </article>
+
+            <article class="contact-card glass reveal">
+              <h3 style="font-size: var(--text-xl); font-family: var(--font-display);">Contact form</h3>
+              <p style="margin-top: .65rem; margin-bottom: var(--space-5);">Form ini memakai tampilan modern dan simulasi pengiriman pesan di sisi klien.</p>
+              <form class="contact-form" id="contactForm">
+                <div class="field">
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" placeholder="Your name" required />
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" placeholder="you@example.com" required />
+                </div>
+                <div class="field">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" placeholder="Tell me about your project, collaboration, or security lab idea." required></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit"><i class="fa-solid fa-bolt"></i> Send Message</button>
+                <div class="form-status" id="formStatus" aria-live="polite"></div>
+              </form>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-wrap glass reveal">
+          <div>
+            <strong style="display:block; font-size: var(--text-lg); margin-bottom: .45rem;">Security Cxtech Portfolio</strong>
+            <p class="footer-quote">“Cyber security is not a product, but a process of continuous visibility, testing, and defense.”</p>
+          </div>
+          <div class="socials" aria-label="Social media links">
+            <a href="https://github.com/t1ano" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/t1ano" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://wa.me/6281522831001" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:tiano.security@example.com" target="_blank" rel="noopener noreferrer" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
